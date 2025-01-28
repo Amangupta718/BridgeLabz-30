@@ -27,3 +27,13 @@
 - Solved Level 1 assignment, focusing on Basics of Arrays in java.
 - Solved Level 2 assignment, with Multi-Dimentional Arrays in java.
 - Strengthened understanding of Arrays in java concepts.
+
+- ## **27-01-25**
+- Solved Level 1 assignment, focusing on method calling using objects.
+- Solved Level 2 assignment, focusing on calling of multiple methods using objects.
+- Strengthened understanding of objects,methods and function calls , with static method and without static methods.
+
+- ## **28-01-25**
+- Solved Level 3 assignment, focusing on multiple method calls with and without static methods.
+- Learned about Cohesion and Coupling.
+- Strengthened understanding of Methods and inter-module bonding and interdependencies with in classes and between classes in java concepts.
