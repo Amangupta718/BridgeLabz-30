@@ -37,3 +37,18 @@
 - Solved Level 3 assignment, focusing on multiple method calls with and without static methods.
 - Learned about Cohesion and Coupling.
 - Strengthened understanding of Methods and inter-module bonding and interdependencies with in classes and between classes in java concepts.
+
+## **29-01-25**
+- Solved Built-in functions assignment, focusing on some commonly used  built-in funtions.
+- Learned about Association , Aggregation and Composition.
+- Strengthened understanding of Built-in functions and interdependencies between Objects in java concepts.
+
+## **31-01-25**
+- Solved Class and object assignment, focusing on , how to call objects of a class and use them in Object Oriented Programming , rather than in Procedural Programming.
+- Learned about Object Creation and different uses of abstract class , interface and their implementation.
+- Strengthened understanding of Classes and Objects using principles of Object Oriented Programming.
+
+## **02-02-25**
+- Solved Level 1 Lab assignment, focusing on instance and class variables, Praticing hands on practice of Access Modifiers.
+- Learned about Data hinding using access specifiers  , local,class,instance variables.
+- Strengthened understanding and importance of data hiding and different ways  of using local,class and global variables with amalgamation of Access Specifiers.
