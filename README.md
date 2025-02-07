@@ -52,3 +52,28 @@
 - Solved Level 1 Lab assignment, focusing on instance and class variables, Praticing hands on practice of Access Modifiers.
 - Learned about Data hinding using access specifiers  , local,class,instance variables.
 - Strengthened understanding and importance of data hiding and different ways  of using local,class and global variables with amalgamation of Access Specifiers.
+
+## **03-02-25**
+- Learned about this,static,final keyowrd  and contructor(default,parameterised and copy) in java programming.
+- Solved Assignment question on this,static and final.
+
+## **04-02-25**
+- Learned about  this, static, final key words and instanceof operator in Java.
+- Implementation of instanceof operator which enables crossverification of objects in Java.
+- Solved level 1 lab practice questions on the above topics.
+
+## **05-02-25**
+- Learned about object modeling and Class Diagram in JAVA.
+- Solved assignment on the above topics including in depth understancing of class and object diagrams.
+- Learned and implemented sequence diagram of various Java programs. 
+
+## **06-02-25**
+- Learned about inheritance in java including its various types such as -single,multi,multiple and heirarchical level .
+- Gone through various concepts :- Method Overriding,constructor inheritence in java,polymorphism and inheritance ,and, Access Modifiers and inheritance .
+- Perfomed Second Review.
+
+## **07-02-25**
+- Hands-on practice of Assosiation , Aggregation , Composition.
+- Learned more of industrial usage git commands (git stash , git rebase , etc.).
+- Practiced real life Inheritance problems and differentiating factor between inhertance and aggregation.
+- Strengthened understandings of has-a and in-a relationship.
