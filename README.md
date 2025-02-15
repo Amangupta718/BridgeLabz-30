@@ -99,3 +99,13 @@
 - Learned implementation and Syntax of Stack,Queues and HashMaps.
 - Learned further more industrial usage git commands.
 - Gone through HashCodes and how to Generate them.
+
+## **14-02-25**
+- Solved Sorting problems from Assignment.
+- Learned implementation and internal working of all Sorting algorithms.
+- Gone through Hashing.
+
+## **15-02-25**
+- Solved Daily Assignment , based on Searching , File Handling and Input Streams.
+- Gone through how stringbuilder and stringbuffer differ in terms of threading , worked on internal working of all Searching algorithms.
+- Learned basics of Java Swing and JavaX , Awt.
