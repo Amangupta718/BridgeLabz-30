@@ -1,0 +1,52 @@
+public class SearchComparison {
+    // Linear Search (O(N))
+    public static int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i; // Return index if found
+            }
+        }
+        return -1; // Return -1 if not found
+    }
+
+    // Binary Search (O(log N))
+    public static int binarySearch(int[] arr, int target) {
+        int left = 0, right = arr.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] == target)
+                return mid;
+            else if (arr[mid] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        return -1; // Return -1 if not found
+    }
+
+    public static void main(String[] args) {
+        int N = 1000000; // Dataset size
+        int[] data = new int[N];
+
+        // Filling array with values from 1 to N
+        for (int i = 0; i < N; i++) {
+            data[i] = i + 1;
+        }
+
+        int target = N - 1; // Searching for second last element
+
+        // Linear Search Performance
+        long start1 = System.nanoTime();
+        linearSearch(data, target);
+        long end1 = System.nanoTime();
+        System.out.println("Linear Search Time: " + (end1 - start1) / 1e6 + " ms");
+
+        // Binary Search Performance (Sort first)
+        Arrays.sort(data); // Needed for Binary Search
+        long start2 = System.nanoTime();
+        binarySearch(data, target);
+        long end2 = System.nanoTime();
+        System.out.println("Binary Search Time: " + (end2 - start2) / 1e6 + " ms");
+    }
+}
+

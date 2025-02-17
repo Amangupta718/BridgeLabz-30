@@ -1,0 +1,47 @@
+
+public class StringConcatenationPerformance {
+    
+    // Using String (O(N²))
+    public static void testString(int N) {
+        String str = "";
+        long start = System.nanoTime();
+        for (int i = 0; i < N; i++) {
+            str += "a"; // Creates a new object each time (inefficient)
+        }
+        long end = System.nanoTime();
+        System.out.println("String Time: " + (end - start) / 1e6 + " ms");
+    }
+
+    // Using StringBuilder (O(N))
+    public static void testStringBuilder(int N) {
+        StringBuilder sb = new StringBuilder();
+        long start = System.nanoTime();
+        for (int i = 0; i < N; i++) {
+            sb.append("a");
+        }
+        long end = System.nanoTime();
+        System.out.println("StringBuilder Time: " + (end - start) / 1e6 + " ms");
+    }
+
+    // Using StringBuffer (O(N))
+    public static void testStringBuffer(int N) {
+        StringBuffer sb = new StringBuffer();
+        long start = System.nanoTime();
+        for (int i = 0; i < N; i++) {
+            sb.append("a");
+        }
+        long end = System.nanoTime();
+        System.out.println("StringBuffer Time: " + (end - start) / 1e6 + " ms");
+    }
+
+    public static void main(String[] args) {
+        int N = 1000000; // 1 million concatenations
+
+        // Run performance tests
+        System.out.println("Testing with N = " + N);
+        testString(N);       // Very slow
+        testStringBuilder(N); // Fast
+        testStringBuffer(N);  // Fast but slightly slower than StringBuilder
+    }
+}
+

@@ -1,0 +1,40 @@
+
+import java.io.*;
+
+public class FileReadingComparison {
+
+    // Method to read file using FileReader (Character Stream)
+    public static void readFileUsingFileReader(String filePath) throws IOException {
+        FileReader fr = new FileReader(filePath);
+        long start = System.nanoTime();
+        while (fr.read() != -1); // Read character by character
+        long end = System.nanoTime();
+        fr.close();
+        System.out.println("FileReader Time: " + (end - start) / 1e6 + " ms");
+    }
+
+    // Method to read file using InputStreamReader (Byte Stream)
+    public static void readFileUsingInputStreamReader(String filePath) throws IOException {
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(filePath));
+        long start = System.nanoTime();
+        while (isr.read() != -1); // Read byte by byte and convert to characters
+        long end = System.nanoTime();
+        isr.close();
+        System.out.println("InputStreamReader Time: " + (end - start) / 1e6 + " ms");
+    }
+
+    public static void main(String[] args) {
+        String filePath = "largefile.txt"; // Replace with an actual large file
+
+        try {
+            System.out.println("Reading file using FileReader...");
+            readFileUsingFileReader(filePath);
+
+            System.out.println("Reading file using InputStreamReader...");
+            readFileUsingInputStreamReader(filePath);
+        } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
+

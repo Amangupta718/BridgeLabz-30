@@ -1,0 +1,60 @@
+
+import java.util.*;
+
+public class DataStructureSearchComparison {
+
+    // Method to search in an array (O(N))
+    public static boolean searchInArray(int[] arr, int target) {
+        for (int num : arr) {
+            if (num == target) return true;
+        }
+        return false;
+    }
+
+    // Method to search in a HashSet (O(1))
+    public static boolean searchInHashSet(HashSet<Integer> set, int target) {
+        return set.contains(target);
+    }
+
+    // Method to search in a TreeSet (O(log N))
+    public static boolean searchInTreeSet(TreeSet<Integer> set, int target) {
+        return set.contains(target);
+    }
+
+    public static void main(String[] args) {
+        int N = 1000000; // 1 million elements
+        Random rand = new Random();
+        int target = rand.nextInt(N); // Random target to search
+
+        // Generate dataset
+        int[] array = new int[N];
+        HashSet<Integer> hashSet = new HashSet<>();
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        
+        for (int i = 0; i < N; i++) {
+            int num = rand.nextInt(N * 10); // Unique range to avoid too many duplicates
+            array[i] = num;
+            hashSet.add(num);
+            treeSet.add(num);
+        }
+
+        // Measure Array Search Time (O(N))
+        long start1 = System.nanoTime();
+        boolean foundArray = searchInArray(array, target);
+        long end1 = System.nanoTime();
+        System.out.println("Array Search Time: " + (end1 - start1) / 1e6 + " ms | Found: " + foundArray);
+
+        // Measure HashSet Search Time (O(1))
+        long start2 = System.nanoTime();
+        boolean foundHashSet = searchInHashSet(hashSet, target);
+        long end2 = System.nanoTime();
+        System.out.println("HashSet Search Time: " + (end2 - start2) / 1e6 + " ms | Found: " + foundHashSet);
+
+        // Measure TreeSet Search Time (O(log N))
+        long start3 = System.nanoTime();
+        boolean foundTreeSet = searchInTreeSet(treeSet, target);
+        long end3 = System.nanoTime();
+        System.out.println("TreeSet Search Time: " + (end3 - start3) / 1e6 + " ms | Found: " + foundTreeSet);
+    }
+}
+
