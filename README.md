@@ -109,3 +109,26 @@
 - Solved Daily Assignment , based on Searching , File Handling and Input Streams.
 - Gone through how stringbuilder and stringbuffer differ in terms of threading , worked on internal working of all Searching algorithms.
 - Learned basics of Java Swing and JavaX , Awt.
+
+## **16-02-25**
+- Learned about Algorithms's Runtime Analysis and Big-O Notation.
+- Gone through time and space complexity analysis,best,worst and average case complexities.
+- Gone through practical Guidelines for Optimizing Java Code.
+
+## **17-02-25**
+- Review 3 taken.
+- Solved various problems on finding out the fastest searching algorithms.
+- Solved various problems on finding out the fastest sorting algorithms.
+
+## **18-02-25**
+- Learned about Java Generics and Wildcards .
+- Brushed up on interfaces and abstraction.
+- Learned about Java Collections.
+
+## **19-02-25**
+- Submission of Java Generics assignment.
+- Gone through Java Streams fundamentals .
+  
+## **20-02-25**
+-Submission of collections assignment 
+-Submission of Java Streams Assignment.
