@@ -130,5 +130,5 @@
 - Gone through Java Streams fundamentals .
   
 ## **20-02-25**
--Submission of collections assignment 
--Submission of Java Streams Assignment.
+- Submission of collections assignment 
+- Submission of Java Streams Assignment.
